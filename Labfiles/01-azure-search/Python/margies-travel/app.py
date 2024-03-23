@@ -10,7 +10,7 @@ from azure.search.documents import SearchClient
 app = Flask(__name__)
 
 # Azure Search constants
-load_dotenv()
+load_dotenv(~/.env)
 search_endpoint = os.getenv('SEARCH_SERVICE_ENDPOINT')
 search_key = os.getenv('SEARCH_SERVICE_QUERY_KEY')
 search_index = os.getenv('SEARCH_INDEX_NAME')
