@@ -12,7 +12,7 @@ app = Flask(__name__)
 # Azure Search constants
 dotenv_path = os.path.expanduser('~/.env') 
 
-        load_dotenv(dotenv_path)
+load_dotenv(dotenv_path)
 search_endpoint = os.getenv('SEARCH_SERVICE_ENDPOINT')
 search_key = os.getenv('SEARCH_SERVICE_QUERY_KEY')
 search_index = os.getenv('SEARCH_INDEX_NAME')
