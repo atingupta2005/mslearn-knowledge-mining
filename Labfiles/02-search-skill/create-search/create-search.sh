@@ -6,7 +6,7 @@ admin_key="$AI_SEARCH_ADMIN_KEY"
 
 echo "-----"
 echo "Creating the data source..."
-curl -X POST "$url/datasources?api-version=2020-06-30" -H "Content-Type: application/json" -H "api-key: $admin_key" -d @data_source.json
+curl -X POST "https://ag-ai-search-mar-24.search.windows.net/datasources?api-version=2020-06-30" -H "Content-Type: application/json" -H "api-key: 760e818a45464965a6adc3e731535594" -d "@data_source.json"
 
 echo "-----"
 echo "Creating the skillset..."
